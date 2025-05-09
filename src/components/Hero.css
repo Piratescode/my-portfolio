@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background: linear-gradient(to right, #1a73e8, #4285f4);
+    background: linear-gradient(to right, #b4b7bc, #4285f4);
     color: white;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@
   
   .cta-btn {
     background-color: #ffffff;
-    color: #1a73e8;
+    color: #465972;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
