@@ -1,14 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const links = ["Home", "About", "Services", "Contact"]
+    const links = ["Portfolio", "Technologies", "About"]
 
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <div className="logo">MiraDev</div>
+                <div className="logo">
+                    <a href="/">MiraDev</a>
+                </div>
 
                 {/* Desktop */}
                 <ul className={`nav-links ${isOpen ? "active" : ""}`}>
@@ -20,13 +24,21 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+                
+                <div className="nav-button">
+                    <a href="#get-started">
+                        <button>Get Started</button>
+                    </a>
+                </div>
+
 
                 {/* Mobile */}
-                <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-                    <div className={isOpen ? "bar rotate" : "bar"}></div>
-                    <div className={isOpen ? "bar fade" : "bar"}></div>
-                    <div className={isOpen ? "bar rotate-reverse" : "bar"}></div>
+                <div className={`menu-icon ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
                 </div>
+
             </div>
         </nav>
     );
