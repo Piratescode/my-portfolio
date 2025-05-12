@@ -1,39 +1,165 @@
 .hero {
-    height: 100vh;
-    background: linear-gradient(to right, #20478a, #4285f4);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text .name {
+  color: #0077cc;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #005fa3;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Blob */
+.blob {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: blobAnimation 8s infinite;
+  overflow: hidden;
+}
+
+@keyframes blobAnimation {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+.blob img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Typing text animation */
+.animated-text::after {
+  content: "Web Developer";
+  animation: typing 6s steps(20) infinite, blink 0.7s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #0077cc;
+}
+
+@keyframes typing {
+  0% { content: "W"; }
+  10% { content: "We"; }
+  20% { content: "Web"; }
+  30% { content: "Web D"; }
+  40% { content: "Web De"; }
+  50% { content: "Web Dev"; }
+  60% { content: "Web Deve"; }
+  70% { content: "Web Devel"; }
+  80% { content: "Web Develo"; }
+  90% { content: "Web Develop"; }
+  100% { content: "Web Developer"; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* 📱 Mobile and Tablet Responsive Styling */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
     text-align: center;
   }
-  
-  .hero-content {
-    max-width: 800px;
+
+  .hero-text h1 {
+    font-size: 2.5rem;
   }
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+
+  .hero-text h2 {
+    font-size: 1.8rem;
   }
-  
-  p {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
+
+  .hero-text p {
+    font-size: 1rem;
   }
-  
-  .cta-btn {
-    background-color: #ffffff;
-    color: #465972;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 1.25rem;
+
+  .blob {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
   }
-  
-  .cta-btn:hover {
-    background-color: #1a73e8;
-    color: white;
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 2rem;
   }
-  
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .blob {
+    width: 200px;
+    height: 200px;
+  }
+}
