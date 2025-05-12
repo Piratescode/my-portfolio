@@ -95,7 +95,7 @@
 /* Typing text animation */
 .animated-text::after {
   content: "Web Developer";
-  animation: typing 6s steps(20) infinite, blink 0.7s infinite;
+  animation: typing 3s steps(20) infinite, blink 0.7s infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0077cc;
@@ -139,8 +139,8 @@
   }
 
   .blob {
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    height: 90vh;
     margin-top: 30px;
   }
 }
@@ -159,7 +159,7 @@
   }
 
   .blob {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 90vh;
   }
 }
