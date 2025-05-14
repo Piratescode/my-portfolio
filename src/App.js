@@ -13,16 +13,13 @@ import './App.css';  // Import styles for App
 const App = () => {
   return (
     <div>
-
-<Navbar />
+      <Navbar />
       <Hero />
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/portals" element={<Portals />} />
             <Route path="/cbt-tests" element={<CBTTests />} />
           </Routes>
-
-
     </div>
   );
 };

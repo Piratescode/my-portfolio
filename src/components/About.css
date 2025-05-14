@@ -19,12 +19,15 @@
   }
   
   .about-text {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
+    text-align: center;
+    width: 80%;
   }
+
   
   .about-text h2 {
     font-size: 2.5rem;
@@ -35,13 +38,14 @@
   .about-text p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #333;
+    color: #000;
     margin-bottom: 1rem;
   }
 
   .about-buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
   
   .about-buttons .btn {
@@ -69,7 +73,7 @@
   .about-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: center;
   }
   
   /* Tablet and small laptop support (maintain side-by-side layout) */
@@ -121,7 +125,6 @@
   
     .about-image {
       height: 40vh; /* Make the image 40% of the viewport height */
-      padding-top: 2rem;
     }
   
     .about-image img {
