@@ -17,11 +17,12 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <Routes>
+      <About />
+    { /* <Routes>
         <Route path="/" element={<About />} />
         <Route path="/portals" element={<Portals />} />
         <Route path="/cbt-tests" element={<CBTTests />} />
-      </Routes>
+      </Routes> */}
     <Team />
     </div>
   );
