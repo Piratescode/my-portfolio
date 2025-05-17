@@ -27,9 +27,9 @@ const App = () => {
         <Route path="/portals" element={<Portals />} />
         <Route path="/cbt-tests" element={<CBTTests />} />
       </Routes> */}
-    <Team />
-    <SchoolPortalSection />
-    <CBTTestingSection />
+      <Team />
+      <SchoolPortalSection />
+      <CBTTestingSection />
     </div>
   );
 };
