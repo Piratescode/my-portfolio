@@ -18,16 +18,17 @@ function About() {
             I use cutting-edge technologies to deliver efficient and scalable
             applications.
           </p>
+        </div>
            {/* Add buttons for navigation */}
          <div className="about-buttons">
             <Link to="/portals" className="btn">Portal</Link>
             <Link to="/cbt-tests" className="btn">CBT Tests</Link>
           </div>
         </div>
-        
-        <div className="about-image">
-          <img src={myPhoto} alt="LordRain" />
-        </div>
+      
+    
+      <div className="about-image">
+        <img src={myPhoto} alt="LordRain" />
       </div>
     </section>
   );

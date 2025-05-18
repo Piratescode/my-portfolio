@@ -4,7 +4,7 @@ import portalImage from '../assets/studentportal.jpg';
 
 const SchoolPortalSection = () => {
   return (
-    <div>
+    <div className='portal'>
         <section className="school-portal">
             <div className="left-content">
                 <p className="subheading">OUR EXPERTISE</p>

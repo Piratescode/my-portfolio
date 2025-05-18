@@ -1,12 +1,21 @@
+.portal {
+  background-color: #f3f4f6; /* light gray */
+}
 .school-portal {
+    
+  
+    padding: 4rem 2rem;
+    
+ 
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 4rem 2rem;
-    background-color: #f3f4f6; /* light gray */
-    gap: 2rem;
-    
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 40px;
   }
   
   .left-content {
