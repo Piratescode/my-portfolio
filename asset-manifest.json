@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.e41a2a5a.css",
-    "main.js": "/my-portfolio/static/js/main.2d562c66.js",
+    "main.css": "/my-portfolio/static/css/main.db260ada.css",
+    "main.js": "/my-portfolio/static/js/main.2bb21548.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/studentportal.jpg": "/my-portfolio/static/media/studentportal.61881397bef05b4640d6.jpg",
+    "static/media/dashboard.jpg": "/my-portfolio/static/media/dashboard.1ae102f9e1cde02fbc57.jpg",
     "static/media/cbt-testing.jpg": "/my-portfolio/static/media/cbt-testing.0f6e1f86a0859f3a1afa.jpg",
     "static/media/team-photo.jpg": "/my-portfolio/static/media/team-photo.ee72561b4d553412654b.jpg",
     "static/media/photo.jpg": "/my-portfolio/static/media/photo.2046a8af4f5f9a3d7024.jpg",
+    "static/media/tech-stack.jpg": "/my-portfolio/static/media/tech-stack.4b8a52909a48a9cda362.jpg",
     "static/media/laptop.jpg": "/my-portfolio/static/media/laptop.5cabcb38b0e20b64603e.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.e41a2a5a.css.map": "/my-portfolio/static/css/main.e41a2a5a.css.map",
-    "main.2d562c66.js.map": "/my-portfolio/static/js/main.2d562c66.js.map",
+    "main.db260ada.css.map": "/my-portfolio/static/css/main.db260ada.css.map",
+    "main.2bb21548.js.map": "/my-portfolio/static/js/main.2bb21548.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e41a2a5a.css",
-    "static/js/main.2d562c66.js"
+    "static/css/main.db260ada.css",
+    "static/js/main.2bb21548.js"
   ]
 }
