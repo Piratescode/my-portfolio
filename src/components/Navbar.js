@@ -1,47 +1,60 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const links = ["Portfolio", "Technologies", "About"]
+  const links = [
+    { name: "Portfolio", path: "/portfolio" },       // Routed page
+    { name: "Technologies", path: "#technologies" }, // Scroll to section
+    { name: "About", path: "#about" },               // Scroll to section
+  ];
 
-    return (
-        <nav className="navbar">
-            <div className="navbar-container">
-                <div className="logo">
-                    <a href="/">MiraDev</a>
-                </div>
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        
+        {/* Logo */}
+        <div className="logo">
+          <Link to="/" onClick={() => setIsOpen(false)}>MiraDev</Link>
+        </div>
 
-                {/* Desktop */}
-                <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-                    {links.map((link) => (
-                        <li key={link}>
-                            <a href={`#${link.toLowerCase()}`} onClick={() => setIsOpen(false)}>
-                                {link}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-                
-                <div className="nav-button">
-                    <a href="#get-started">
-                        <button>Get Started</button>
-                    </a>
-                </div>
+        {/* Desktop Navigation */}
+        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+          {links.map((link) => (
+            <li key={link.name}>
+              {link.path.startsWith("#") ? (
+                <a href={link.path} onClick={() => setIsOpen(false)}>
+                  {link.name}
+                </a>
+              ) : (
+                <Link to={link.path} onClick={() => setIsOpen(false)}>
+                  {link.name}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
 
+        {/* Get Started Button */}
+        <div className="nav-button">
+          <a href="#get-started">
+            <button>Get Started</button>
+          </a>
+        </div>
 
-                {/* Mobile */}
-                <div className={`menu-icon ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                </div>
-
-            </div>
-        </nav>
-    );
+        {/* Mobile Menu Icon */}
+        <div
+          className={`menu-icon ${isOpen ? "open" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

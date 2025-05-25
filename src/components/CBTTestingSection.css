@@ -1,7 +1,7 @@
 .cbt-section {
     background-color: #f4f4f4;
     padding: 60px 20px;
-    width: 100vw;
+    width: 100%;
   }
   
   .cbt-container {
@@ -71,7 +71,7 @@
     }
   
     .cbt-text h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
   

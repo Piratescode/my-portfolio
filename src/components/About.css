@@ -1,3 +1,12 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .about {
     height: 100vh;
     display: flex;
@@ -21,22 +30,21 @@
   }
   
   .about-text {
-    padding: 2rem;
-    justify-content: center;
+    padding: 1rem;
     background-color: #fff;
     flex-shrink: 0;
-
+    max-width: 500px;
   }
 
   
   .about-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #007bff;
     margin-bottom: 1.5rem;
   }
   
   .about-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: #000;
     margin-bottom: 1rem;
@@ -89,14 +97,14 @@
       gap: 1rem;
     }
   
-    .about-text,
+    .about-content,
     .about-image {
       width: 100%;
       height: auto;
       text-align: center;
     }
     .about-text{
-      width: 100vw;
+      width: 100%;
     }
     .about-image img {
       width: 100%;
