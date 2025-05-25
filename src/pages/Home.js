@@ -44,7 +44,6 @@ const Home = () => {
       <TechStackSection />
       <TestimonialsCarousel />
       <NewsSection />
-      <Footer />
     </div>
     
   );
