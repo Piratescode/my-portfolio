@@ -24,8 +24,6 @@ import TestimonialsCarousel from '../components/TestimonialsCarousel';
 
 import '../components/TestimonialsCarousel.css'
 
-import Footer from '../components/Footer';
-
 import '../components/Footer.css'
 
 import NewsSection from '../components/NewsSection';
