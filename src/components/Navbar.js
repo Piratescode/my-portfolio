@@ -6,8 +6,8 @@ const Navbar = () => {
 
   const links = [
     { name: "Portfolio", path: "/portfolio" },       // Routed page
-    { name: "Technologies", path: "#technologies" }, // Scroll to section
-    { name: "About", path: "#about" },               // Scroll to section
+    { name: "Technologies", path: "/technologies" },
+    { name: "About", path: "/about" },           // Scroll to section
   ];
 
   return (
