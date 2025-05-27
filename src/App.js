@@ -9,6 +9,11 @@ import About from "./pages/About";
 
 import GetStarted from "./pages/GetStarted";
 
+import Contact from './pages/ContactSection';
+
+import ContactSection from "./pages/ContactSection";
+import './pages/ContactSection.css'
+
 function App() {
   return (
     <>
@@ -19,6 +24,9 @@ function App() {
         <Route path="/technologies" element={<Technologies />} />
         <Route path="/about" element={<About />} />
         <Route path="/get-started" element={<GetStarted />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactSection />} />
+
       </Routes>
       <Footer />
     </>
