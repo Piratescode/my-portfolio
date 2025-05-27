@@ -38,9 +38,9 @@ const Navbar = () => {
 
         {/* Get Started Button */}
         <div className="nav-button">
-          <a href="#get-started">
-            <button>Get Started</button>
-          </a>
+          <Link to="/get-started">
+             <button>Get Started</button>
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
