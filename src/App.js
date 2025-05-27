@@ -25,7 +25,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/contact" element={<ContactSection />} />
+        <Route path="/contactsection" element={<ContactSection />} />
 
       </Routes>
       <Footer />
