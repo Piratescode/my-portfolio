@@ -1,16 +1,14 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1rem 0;
 }
 
-/* src/components/Footer.css */
 .footer {
     background-color: #0d0d0d;
     color: #ffffff;
     padding: 40px 20px;
     font-family: 'Poppins', sans-serif;
-    
   }
   
   .footer-contact {

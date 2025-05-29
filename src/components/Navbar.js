@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,9 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="logo">
-          <Link to="/" onClick={() => setIsOpen(false)}>MiraDev</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -25,7 +28,7 @@ const Navbar = () => {
             <li key={link.name}>
               {link.path.startsWith("#") ? (
                 <a href={link.path} onClick={() => setIsOpen(false)}>
-                  {link.name}
+                    {link.name}
                 </a>
               ) : (
                 <Link to={link.path} onClick={() => setIsOpen(false)}>
