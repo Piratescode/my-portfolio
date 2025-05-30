@@ -1,5 +1,6 @@
 .portal {
   background-color: #f3f4f6; /* light gray */
+  
 }
 .school-portal {
     padding: 3rem 0;
@@ -11,6 +12,7 @@
     margin: auto;
     flex-wrap: wrap;
     gap: 40px;
+    padding: 2rem 2rem;
   }
   
   .left-content {
