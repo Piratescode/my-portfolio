@@ -1,97 +1,114 @@
+/* Base container */
 .get-started-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    animation: fadeIn 0.8s ease-in;
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Inner container for content */
+.get-started-container .container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+.get-started-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.get-started-container h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+/* Paragraph and list */
+.get-started-container p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.get-started-container ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.get-started-container li {
+  margin-bottom: 0.5rem;
+}
+
+/* Form section */
+.quote-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-form input,
+.quote-form textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quote-form button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .get-started-container h1 {
+    font-size: 1.6rem;
   }
 
-  .container{
-    margin-top: 60px;
+  .get-started-container h2 {
+    font-size: 1.25rem;
   }
-  
-  .get-started-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-    animation: slideDown 0.6s ease-in-out;
+
+  .get-started-container .container {
+    padding: 1.5rem;
   }
-  
-  .get-started-description {
+}
+
+@media (max-width: 480px) {
+  .get-started-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .get-started-container h2 {
     font-size: 1.1rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    animation: fadeIn 1s ease;
   }
-  
-  .get-started-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 600px;
-    margin: auto;
-    animation: fadeInUp 1.2s ease;
+
+  .quote-form input,
+  .quote-form textarea {
+    font-size: 0.95rem;
   }
-  
-  .get-started-form input,
-  .get-started-form textarea {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    width: 100%;
+
+  .quote-form button {
+    font-size: 0.95rem;
   }
-  
-  .get-started-form textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  .get-started-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 0.9rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .get-started-form button:hover {
-    background-color: #0056b3;
-    transform: scale(1.03);
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-  }
-  
-  @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .get-started-title {
-      font-size: 1.6rem;
-    }
-  
-    .get-started-description {
-      font-size: 1rem;
-    }
-  
-    .get-started-form {
-      padding: 0 1rem;
-    }
-  }
-  
+}
