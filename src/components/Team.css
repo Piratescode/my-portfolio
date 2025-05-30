@@ -6,7 +6,7 @@
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
-    padding: 2rem 2rem;
+    padding: 2rem 0;
   }
   
   .team-image img {

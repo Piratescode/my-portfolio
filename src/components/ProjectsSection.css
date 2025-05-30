@@ -73,6 +73,11 @@
   
   /* Responsive */
   @media (max-width: 768px) {
+
+    .container{
+      padding: 0 2rem;
+    }
+
     .projects-content {
       flex-direction: column;
       text-align: center;
