@@ -4,22 +4,22 @@ import "./Technologies.css";
 const technologies = [
   {
     name: "React",
-    image: "/images/react.png",
+    image: "./images/react.jpg",
     description: "A powerful library for building dynamic and responsive user interfaces."
   },
   {
     name: "Django",
-    image: "/images/django.png",
+    image: "./images/django.jpg",
     description: "A high-level Python web framework that encourages rapid development."
   },
   {
     name: "PostgreSQL",
-    image: "/images/postgresql.png",
+    image: "./images/postgresql.jpg",
     description: "An advanced open-source relational database system."
   },
   {
     name: "Bootstrap",
-    image: "/images/bootstrap.png",
+    image: "./images/bootstrap.jpg",
     description: "A popular CSS framework for responsive and mobile-first design."
   },
 ];
