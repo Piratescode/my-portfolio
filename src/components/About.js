@@ -23,7 +23,7 @@ function About() {
            {/* Add buttons for navigation */}
          <div className="about-buttons">
             <Link to="/portals" className="btn">Portal</Link>
-            <Link to="/cbt-tests" className="btn">CBT Tests</Link>
+            <Link to="/cbt-tests" className="btn btn-test">CBT Tests</Link>
           </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import pass from '../assets/pass.jpg'
 
 const testimonials = [
   {
@@ -12,21 +13,28 @@ const testimonials = [
     text: `MiraDev Systems transformed our school's online presence with a custom portal that exceeded our expectations. Their attention to detail and commitment to quality made the process seamless.`,
     name: 'Sarah Johnson',
     title: 'Principal, Greenwood High School',
-    image: '/images/sarah.jpg', // Replace with actual image path
+    image: pass, // Replace with actual image path
   },
   {
     school: 'XYZ University',
     text: `The computer-based testing system developed by MiraDev Systems was a game-changer for our university. It streamlined our exam process and provided instant results, which our students loved.`,
     name: 'Michael Smith',
     title: 'IT Director, XYZ University',
-    image: '/images/michael.jpg',
+    image: pass,
   },
   {
     school: 'ABC Academy',
     text: `Working with MiraDev Systems was a fantastic experience. They delivered a user-friendly school portal that has greatly improved communication among our staff and students.`,
     name: 'Emily Davis',
     title: 'Administrator, ABC Academy',
-    image: '/images/emily.jpg',
+    image: pass,
+  },
+  {
+    school: 'St. Thaddues Science Academy',
+    text: `Working with MiraDev Systems was a fantastic experience. They delivered a user-friendly school portal that has greatly improved communication among our staff and students.`,
+    name: 'Emily Davis',
+    title: 'Administrator, ABC Academy',
+    image: pass,
   },
 ];
 
