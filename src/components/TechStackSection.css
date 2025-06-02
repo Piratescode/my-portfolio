@@ -1,10 +1,14 @@
+.container {
+  max-width: 1200px;
+  
+}
+
 .tech-stack-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
-    gap: 2rem;
-    max-width: 1190px;
+    padding: 1rem;
+    gap: 1rem;
     margin: 0 auto;
     flex-wrap: wrap;
   }

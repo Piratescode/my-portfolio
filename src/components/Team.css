@@ -1,13 +1,16 @@
+.container{
+    max-width: 1200px;
+}
+
 .team {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     align-items: center;
-    max-width: 1200px;
     justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
   
   .team-image img {

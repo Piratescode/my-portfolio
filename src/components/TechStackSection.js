@@ -5,6 +5,7 @@ import techImage from '../assets/tech-stack.jpg'; // Replace with your actual im
 const TechStackSection = () => {
   return (
     <section className="tech-stack-section">
+      <div className='container'>
       <div className="tech-content">
         <h2>
           Our <em>Cutting-Edge</em> Tech<br /> Stack for <em>Educational Solutions</em>
@@ -20,6 +21,7 @@ const TechStackSection = () => {
       </div>
       <div className="tech-image">
         <img src={techImage} alt="Tech Stack" />
+      </div>
       </div>
     </section>
   );

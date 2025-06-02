@@ -1,12 +1,14 @@
 .technologies-page {
-    max-width: 1200px;
+    
     margin: auto;
     text-align: center;
     height: auto;
+    padding: 80px 1rem;
   }
   
   .container{
     margin-top: 60px;
+    max-width: 1200px;
   }
 
   .tech-grid {
@@ -41,7 +43,7 @@
   /* Small phones */
 @media (max-width: 479px) {
   .technologies-page {
-    padding: 1rem;
+    padding: 80px 1rem;
   }
 }
 /* Standard phones */
@@ -55,12 +57,5 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .technologies-page {
     padding: 1rem;
-  }
-}
-
-/* Laptops and up */
-@media (min-width: 1025px) {
-  .technologies-page {
-    padding: 1rem ;
   }
 }
