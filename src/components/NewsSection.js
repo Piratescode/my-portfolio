@@ -29,15 +29,15 @@ const NewsSection = () => {
   return (
     <section className="news-section">
       <div className="container">
-      <div className="news-header">
-        <div>
-          <h2>Latest Insights</h2>
-        <p>Explore our recent articles on web development.</p>
-        </div>
-        <div>
-          <a href="/portfolio" className="portfolio-btn">View Portfolio</a>
-        </div>
+        <div className="news-header">
+          <div>
+            <h2>Latest Insights</h2>
+            <p>Explore our recent articles on web development.</p>
           </div>
+          <div>
+            <a href="/portfolio" className="portfolio-btn">View Portfolio</a>
+          </div>
+        </div>
 
       <div className="news-grid">
         {newsData.map((item, index) => (

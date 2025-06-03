@@ -1,37 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./About.css";
-import myPhoto from "../assets/laptop.jpg"; // make sure the path is correct
+import React from 'react';
+import heroImage from '../assets/laptop.jpg'; // Update the path if needed
+import './About.css';
 
-function About() {
+const About = () => {
   return (
-    <section className="about">
-       <div className="container">
-        <div className="about-content">
-          <div className="about-text">
-            <h2>Crafting Educational Solutions with Code.</h2>
-            <p>
-              I specialize in developing custom school portals and computer-based
-              testing systems. Let’s transform your educational technology with
-              innovative and reliable solutions tailored to your needs.
-              I use cutting-edge technologies to deliver efficient and scalable
-              applications.
-            </p>
-          </div>
-          
-          {/* Add buttons for navigation */}
-          <div className="about-buttons">
-            <Link to="/portals" className="btn">Portal</Link>
-            <Link to="/cbt-tests" className="btn btn-test">CBT Tests</Link>
-          </div>
+    <section className="hero-container">
+      <div className="hero-content">
+        <h1>
+          Crafting <span className="highlight">Educational Solutions</span> with <strong>Code.</strong>
+        </h1>
+        <p>
+          I specialize in developing custom school portals and computer-based testing systems.
+          Let’s transform your educational technology with innovative and reliable solutions
+          tailored to your needs. I use cutting-edge technologies to deliver efficient and scalable
+          applications.
+        </p>
+        <div className="hero-buttons">
+          <button className="primary-btn">Portals</button>
+          <button className="outline-btn">Tests</button>
         </div>
-      
-        <div className="about-image">
-          <img src={myPhoto} alt="LordRain" />
-        </div>
+      </div>
+      <div className="hero-image">
+        <img src={heroImage} alt="Developer working" />
       </div>
     </section>
   );
-}
+};
 
 export default About;

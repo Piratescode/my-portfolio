@@ -1,6 +1,5 @@
 .container {
   max-width: 1200px;
-  
 }
 
 .tech-stack-section {
@@ -8,14 +7,12 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    gap: 1rem;
     margin: 0 auto;
     flex-wrap: wrap;
   }
   
   .tech-content {
     flex: 1 1 500px;
-    max-width: 600px;
   }
   
   .tech-content h2 {
