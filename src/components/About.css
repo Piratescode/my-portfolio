@@ -1,0 +1,92 @@
+.containers {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto; /* centers it horizontally */
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.about {
+    display: flex;
+    align-items: center; 
+    height: auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    font-size: 1rem;    
+}
+
+
+.about img {
+    width: 50vw;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    
+}
+
+.about-buttons {
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.primary-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.outline-btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #3498db;
+    color: #3498db;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* 1. Large tablets and small laptops */
+@media (max-width: 1024px) {
+    .about-content {
+        padding: 1rem;
+    }
+  }
+  
+  /* 2. Tablets */
+  @media (max-width: 768px) {
+    /* Styles for screens 768px and below */
+  }
+  
+  /* 3. Large mobile devices */
+  @media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .about img {
+        width: 100vw;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        
+    }
+  }
+  
+  /* 4. Small mobile devices */
+  @media (max-width: 480px) {
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+  }
