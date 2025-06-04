@@ -15,8 +15,9 @@
 .about-content {
     display: flex;
     flex-direction: column;
-    max-width: 590px;
-    font-size: 1rem;    
+    max-width: 600px;
+    font-size: 1rem;  
+
 }
 
 

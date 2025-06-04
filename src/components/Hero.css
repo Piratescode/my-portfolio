@@ -69,7 +69,7 @@ html {
 }
 
 /* Blob */
-.blob {
+/* .blob {
   width: 100%;
   height: 90vh;
   background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
@@ -79,14 +79,14 @@ html {
   justify-content: center;
   animation: blobAnimation 8s infinite;
   overflow: hidden;
-}
+} */
 
 @keyframes blobAnimation {
   0%, 100% {
     border-radius: 60% 40% 50% 70% / 60% 30% 70% 40%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 60% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
 
@@ -94,7 +94,7 @@ html {
   width: 100%;
   height: 90%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 /* Typing text animation */
@@ -127,8 +127,9 @@ html {
 /* 📱 Mobile and Tablet Responsive Styling */
 @media (max-width: 992px) {
   .hero-container {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    height: 100vh;
   }
 
   .hero-text h1 {
@@ -150,7 +151,7 @@ html {
   }
 
   .hero-image img {
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 500px;
     border-radius: 20px;
@@ -159,6 +160,11 @@ html {
 }
 
 @media (max-width: 768px) {
+  .hero-container{
+    margin-top: 50px;
+    flex-direction: column;
+
+  }
   .hero {
     height: auto;
     padding: 2rem 1rem;
@@ -190,9 +196,9 @@ html {
   }
 
   .hero-image img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    max-width: 300px;
+    /* max-width: 300px; */
     border-radius: 20px;
   }
 }
