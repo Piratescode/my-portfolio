@@ -4,10 +4,17 @@
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
+  margin: auto ;
+}
+
+.container{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Inner container for content */
-.get-started-container .container {
+.get-started-container  {
   max-width: 900px;
   width: 100%;
   background-color: #ffffff;
