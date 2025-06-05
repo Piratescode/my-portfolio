@@ -33,20 +33,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-links">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#technologies">Technologies</a>
-        <a href="#about">About</a>
-      </div>
-
-      <hr />
-
       <div className="footer-bottom">
         <p>Copyright © 2025 MiraDev Systems. All rights reserved.</p>
-        <div className="footer-policies">
-          <a href="#terms">Terms and Conditions</a>
-          <a href="#privacy">Privacy Policy</a>
-        </div>
       </div>
       </div>
     </footer>

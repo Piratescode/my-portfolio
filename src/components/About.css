@@ -16,8 +16,7 @@
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    font-size: 1rem;  
-
+    
 }
 
 
@@ -58,7 +57,7 @@
 }
 
 /* 1. Large tablets and small laptops */
-@media (max-width: 1024px) {
+@media (max-width: 1224px) {
     .about-content {
         padding: 1rem;
     }
@@ -66,7 +65,9 @@
   
   /* 2. Tablets */
   @media (max-width: 768px) {
-    /* Styles for screens 768px and below */
+    .about-content {
+        padding: 1rem;
+    }
   }
   
   /* 3. Large mobile devices */

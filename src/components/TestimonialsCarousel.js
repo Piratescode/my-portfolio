@@ -49,7 +49,7 @@ const TestimonialsCarousel = () => {
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 8000, disableOnInteraction: false }}
         loop
         className="testimonial-swiper"
       >
