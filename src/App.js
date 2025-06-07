@@ -3,21 +3,19 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
-
 import Technologies from "./pages/Technologies";
 import About from "./pages/About";
-
 import GetStarted from "./pages/GetStarted";
-
 import Contact from './pages/ContactSection';
-
 import ContactSection from "./pages/ContactSection";
 import './pages/ContactSection.css'
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
@@ -26,7 +24,6 @@ function App() {
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contactsection" element={<ContactSection />} />
-
       </Routes>
       <Footer />
     </>

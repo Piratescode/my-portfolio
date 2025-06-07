@@ -1,33 +1,25 @@
-/* Base container */
-.get-started-container {
-  background-color: #f9f9f9;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  margin: auto ;
-}
-
-.container{
+.container {
+  display: grid;
   max-width: 1200px;
-  display: flex;
-  flex-direction: row;
+  grid-template-rows: max-content;
+  justify-content: center;
 }
 
-/* Inner container for content */
-.get-started-container  {
-  max-width: 900px;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+.get-started-container {
+  display: grid;
+margin: 0 auto ;
+
 }
 
+.get-started-heading{
+  height: 3rem;
+}
 /* Headings */
 .get-started-container h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #333;
+  text-align: center;
 }
 
 .get-started-container h2 {
@@ -40,7 +32,6 @@
 /* Paragraph and list */
 .get-started-container p {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
   color: #555;
 }
 
@@ -58,6 +49,8 @@
 .quote-form form {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  margin: auto;
 }
 
 .quote-form input,
