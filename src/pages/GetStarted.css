@@ -1,8 +1,7 @@
 .container {
   display: grid;
   max-width: 1200px;
-  grid-template-rows: max-content;
-  justify-content: center;
+  
 }
 
 .get-started-container {
