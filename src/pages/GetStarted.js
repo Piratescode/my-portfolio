@@ -4,7 +4,7 @@ import "./GetStarted.css"; // create and style this
 const GetStarted = () => {
   return (
     <section className="get-started-container">
-      <div className="container">
+      <div className="container-getstarted">
         <div className="get-started-heading">
           <h1>Get Started with MiraDev</h1>
           <p>Discover how we can help bring your project to life with our tailored digital solutions.</p>

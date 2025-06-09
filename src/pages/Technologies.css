@@ -2,10 +2,10 @@
   margin: auto;
   text-align: center;
   height: auto;
-  padding: 80px 1rem;
+  padding: 3rem 1rem;
 }
 
-.container {
+.container-technologies {
   margin-top: 30px;
   max-width: 1200px;
   width: 100%; /* ✅ Ensures responsiveness */
@@ -15,8 +15,8 @@
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* ✅ Lowered min for better mobile support */
-  gap: 16px;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100%; /* ✅ Ensures full width */
 }
 
@@ -28,8 +28,6 @@
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  width: 100%; /* ✅ Allows full use of grid column */
-  max-width: none; /* ✅ Removed limit */
 }
 
 .tech-card:hover {
@@ -52,7 +50,5 @@
 }
 
 @media (min-width: 768px) {
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }

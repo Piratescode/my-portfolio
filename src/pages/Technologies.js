@@ -27,7 +27,7 @@ const technologies = [
 const Technologies = () => {
   return (
     <div className="technologies-page">
-    <div className="container">
+    <div className="container-technologies">
       <h2>Technologies I Use</h2>
       <div className="tech-grid">
         {technologies.map((tech) => (

@@ -1,29 +1,31 @@
-.container {
-  display: grid;
+.container-getstarted {
   max-width: 1200px;
-  
+  margin: auto;
+  margin-top: 70px;
+
 }
 
 .get-started-container {
   display: grid;
-margin: 0 auto ;
+  margin: auto ;
+  padding: 1rem;
 
 }
 
 .get-started-heading{
   height: 3rem;
+  margin-bottom: 3rem;
 }
 /* Headings */
 .get-started-container h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
   color: #333;
   text-align: center;
 }
 
 .get-started-container h2 {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: rem;
   font-size: 1.5rem;
   color: #222;
 }

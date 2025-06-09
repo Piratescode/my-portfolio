@@ -5,7 +5,7 @@ import './ContactSection.css';
 const ContactSection = () => {
   return (
     <section id="contact" className="contact-section">
-      <div className='container'>
+      <div className='container-contact'>
       <h2>Get in Touch</h2>
       <p>Fill out the form below and we’ll get back to you shortly.</p>
       <form className="contact-form">

@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <div className="about-page">
-        <div className="container">
+        <div className="container-about">
       <h2>About MiraDev</h2>
       <p className="intro">
         At MiraDev, we specialize in building modern web solutions tailored for educational institutions. 
