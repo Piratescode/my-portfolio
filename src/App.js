@@ -10,6 +10,7 @@ import Contact from './pages/ContactSection';
 import ContactSection from "./pages/ContactSection";
 import './pages/ContactSection.css'
 import ScrollToTop from "./components/ScrollToTop";
+import NewsDetail from "./pages/NewsDetail";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/technologies" element={<Technologies />} />
         <Route path="/about" element={<About />} />
