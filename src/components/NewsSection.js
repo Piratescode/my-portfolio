@@ -4,6 +4,7 @@ import news1 from '../assets/news1.jpg';
 import news2 from '../assets/new2.jpg'
 import news3 from '../assets/news3.jpg'
 import { Link } from "react-router-dom";
+import '../pages/Portfolio.js'
 
 
 const newsData = [

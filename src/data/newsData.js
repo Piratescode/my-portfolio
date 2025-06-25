@@ -1,3 +1,7 @@
+import './newsData.css'
+
+<div className='container'></div>
+
 const newsData = [
     {
       id: 1,
