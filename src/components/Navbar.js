@@ -6,9 +6,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: "Portfolio", path: "/portfolio" },       // Routed page
+    { name: "Portfolio", path: "/portfolio" },  
     { name: "Technologies", path: "/technologies" },
-    { name: "About", path: "/about" },           // Scroll to section
+    { name: "About", path: "/about" },         
   ];
 
   return (
